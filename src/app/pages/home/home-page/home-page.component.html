@@ -1,0 +1,197 @@
+<div class="py-[40px] md:py-[80px] flex flex-col gap-10">
+    <span
+        class="px-2 md:px-[20%] font-bold text-5xl md:text-7xl flex flex-row justify-center text-center  md:leading-[80px]">
+        <span>
+            Everything you need to ship <span style="color: #3D5FFF;">{{dynamicText}}</span>
+        </span>
+    </span>
+
+    <span style="color: #777777;"
+        class=" px-2 md:px-[20%] font-normal text-xl flex flex-row justify-center text-center leading-[30px]">
+        MENA’s #1 shipping gateway for e-commerce stores and retailers to ship, manage, track, analyze and return
+        orders with 200+ carriers from a single dashboard.
+    </span>
+
+    <!-- buttons -->
+    <span class="flex flex-col md:flex-row px-20 md:px-0 justify-center gap-4 md:gap-10">
+        <button style="background-color: #3D5FFF;" class="btn text-white ">
+            Start For free
+        </button>
+        <button class="btnSales">
+            Contact Sales
+        </button>
+    </span>
+
+
+    <!-- ship -->
+    <div>
+        <span id="buttons" class="flex flex-row flex-wrap justify-center gap-x-8 gap-y-4 md:gap-x-16 font-semibold">
+            <span class="roundBtn" [ngClass]="{'activeRoundBtn': checkBtnActive('ship')}"
+                (click)="activeBtnFun('ship')">Ship</span>
+            <span class="roundBtn" [ngClass]="{'activeRoundBtn': checkBtnActive('manage')}">Manage</span>
+            <span class="roundBtn" [ngClass]="{'activeRoundBtn': checkBtnActive('track')}">Track</span>
+            <span class="roundBtn" [ngClass]="{'activeRoundBtn': checkBtnActive('analize')}">Analize</span>
+        </span>
+
+
+
+        @if(checkBtnActive('ship')){
+        <div class="flex flex-row justify-center ">
+            <img src="assets/images/ship.png" alt="ship" class="w-full md:w-[80%]">
+        </div>
+        }
+    </div>
+
+    <!-- Ship easily -->
+    <div class="px-6 md:px-[12%] py-[40px] md:py-[80px] flex flex-col md:flex-row gap-8 md:gap-12 justify-center">
+        <span>
+            <img src="assets/images/shipEasily.svg" alt="shipEasily" />
+        </span>
+        <span class="flex flex-col gap-2 md:gap-4">
+            <span class="text-2xl md:text-4xl font-bold">
+                Ship easily with<br>
+                200+ carriers
+            </span>
+            <span class="mt-6 font-normal text-lg md:text-xl flex place-items-start gap-2" style="color:#555555">
+                <img src="assets/icons/check.svg" alt="check" class="w-6 inline mr-1 mt-1" />
+                <span>
+                    Ship with up to 90% discounted rates or your own rates.
+                </span>
+            </span>
+            <span class="mt-6 font-normal text-lg md:text-xl flex place-items-start gap-2" style="color:#555555">
+                <img src="assets/icons/check.svg" alt="check" class="w-6 inline mr-1 mt-1" />
+                <span>
+                    Use your preferred carriers or your own fleet.
+                </span>
+            </span>
+            <span class="mt-6 font-normal text-lg md:text-xl flex place-items-start gap-2" style="color:#555555">
+                <img src="assets/icons/check.svg" alt="check" class="w-6 inline mr-1 mt-1" />
+                <span>
+                    Ship nationally and internationally.
+                </span>
+            </span>
+            <span class="mt-6 font-normal text-lg md:text-xl flex place-items-start gap-2" style="color:#555555">
+                <img src="assets/icons/check.svg" alt="check" class="w-6 inline mr-1 mt-1" />
+                <span>
+                    Print shipping labels with one click.
+                </span>
+            </span>
+        </span>
+    </div>
+
+    <!-- Take the hassle out -->
+    <div
+        class="px-6 md:px-[12%] py-[40px] md:py-[80px] flex flex-col-reverse md:flex-row gap-8 md:gap-12 justify-center">
+
+        <span class="flex flex-col gap-2 md:gap-4">
+            <span class="text-2xl md:text-4xl font-bold">
+                Take the hassle out<br>
+                of shipping operations
+            </span>
+            <span class="mt-6 font-normal text-lg md:text-xl flex place-items-start gap-2" style="color:#555555">
+                <img src="assets/icons/check.svg" alt="check" class="w-6 inline mr-1 mt-1" />
+                <span>
+                    Manage shipping and fulfillment & ensure timely deliveries.
+                </span>
+            </span>
+            <span class="mt-6 font-normal text-lg md:text-xl flex place-items-start gap-2" style="color:#555555">
+                <img src="assets/icons/check.svg" alt="check" class="w-6 inline mr-1 mt-1" />
+                <span>
+                    Offer cash-on-delivery without worries.
+                </span>
+            </span>
+            <span class="mt-6 font-normal text-lg md:text-xl flex place-items-start gap-2" style="color:#555555">
+                <img src="assets/icons/check.svg" alt="check" class="w-6 inline mr-1 mt-1" />
+                <span>
+                    Assign COD orders to the best-performing carriers.
+                </span>
+            </span>
+            <span class="mt-6 font-normal text-lg md:text-xl flex place-items-start gap-2" style="color:#555555">
+                <img src="assets/icons/check.svg" alt="check" class="w-6 inline mr-1 mt-1" />
+                <span>
+                    Get detailed COD reports to keep things in order.
+                </span>
+            </span>
+        </span>
+        <span>
+            <img src="assets/images/hassle.svg" alt="hassle" />
+        </span>
+    </div>
+
+    <!-- cards -->
+    <div class="flex flex-col md:flex-row place-items-center px-[10%] py-[40px] md:py-[80px] gap-8">
+        <span class="flex flex-col gap-4 box">
+            <span class="font-semibold text-center text-lg">
+                Return & restock more efficiently
+            </span>
+            <span style="color: #777777;" class="text-center text-base">
+                Organize returns efficiently to reduce turnaround time, processing costs.
+            </span>
+            <span class="text-center text-base cursor-pointer">
+                learn more
+            </span>
+        </span>
+
+        <span class="flex flex-col gap-4 box md:-mt-16">
+            <span class="font-semibold text-center text-lg">
+                Track all your shipments in real-time
+            </span>
+            <span style="color: #777777;" class="text-center text-base">
+                Track any order with any courier and automate tracking information.
+            </span>
+            <span class="text-center text-base cursor-pointer">
+                learn more
+            </span>
+        </span>
+
+        <span class="flex flex-col gap-4 box">
+            <span class="font-semibold text-center text-lg">
+                Gain insightful data
+            </span>
+            <span style="color: #777777;" class="text-center text-base">
+                Enjoy actionable, real-time reporting to help you better grow your business.
+            </span>
+            <span class="text-center text-base cursor-pointer">
+                learn more
+            </span>
+        </span>
+
+    </div>
+
+    <!-- The largest integrator for shipping services in MENA -->
+    <div class="flex flex-col gap-8  py-[40px] md:py-[80px] px-[10%]" style="background-color: #FAFAFA;">
+        <span class="font-semibold text-2xl text-center">
+            The largest integrator for shipping services in MENA
+        </span>
+        <span style="color: rgb(106, 106, 106);" class="text-xl text-center">
+            Integrate 20+ sales channels with 200+ shipping carriers and start shipping locally and internationally.
+        </span>
+        <span class="flex flex-row justify-between md:px-20 text-lg mt-8">
+            <span class="underline">
+                Sales channels
+            </span>
+            <span class="underline">
+                Shipping companies
+            </span>
+        </span>
+        <span class="flex flex-row justify-center">
+            <img src="assets/images/otoCat.svg" alt="ship" class="w-full md:w-[90%]">
+        </span>
+    </div>
+
+    <!-- transform the way -->
+    <div class="md:px-[10%] py-[40px] md:py-[80px]">
+        <span
+            class="transformBG  text-white flex flex-col place-items-center gap-8 md:gap-14 justify-center p-10 md:p-20">
+            <span class="text-2xl md:text-4xl font-bold md:px-[25%] text-center">
+                Transform the way you ship and manage orders.
+            </span>
+            <span>
+                <button class="btn text-white bg-black w-[300px]">
+                    Start For free
+                </button>
+            </span>
+        </span>
+    </div>
+
+</div>

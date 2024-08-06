@@ -1,0 +1,41 @@
+.my_navbar {
+  background-image: url("/assets/images/navbar_background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Rest of your styles */
+}
+
+.navBtn {
+  color: white;
+  background-color: black;
+  padding: 15px 30px 15px 30px;
+  border-radius: 6px;
+  gap: 10px;
+  border: 1px solid rgb(6, 6, 6);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logo {
+  width: 56px;
+  height: 59px;
+}
+
+.navbarMenu {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19.2px;
+  cursor: pointer;
+  color: black;
+}
+
+.navbarMenu:hover {
+  color: gray; /* Keep the hovered button's color */
+}
+
+// .navbarMenu:not(:hover) {
+//   color: gray;
+// }
+@media (min-width: 768px) {
+}

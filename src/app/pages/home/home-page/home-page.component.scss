@@ -1,0 +1,59 @@
+.btn {
+  height: 60px;
+  padding: 15px 40px 15px 40px;
+  border-radius: 6px;
+  gap: 10px;
+  border: 1px solid rgb(6, 6, 6);
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: black !important;
+  color: white;
+  box-shadow: rgb(66 66 66 / 48%) 0px 6px 29px;
+}
+
+.btnSales {
+  height: 60px;
+  padding: 15px 40px 15px 40px;
+  border-radius: 6px;
+  gap: 10px;
+  border: 1px solid rgb(6, 6, 6);
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btnSales:hover {
+  box-shadow: rgb(66 66 66 / 48%) 0px 6px 29px;
+}
+
+.roundBtn {
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+}
+
+.activeRoundBtn {
+  border-radius: 20px;
+  background-color: rgb(235, 235, 235);
+}
+
+.transformBG {
+  background-image: url("/assets/images/linesZ.svg");
+  background-color: #3d5fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Rest of your styles */
+}
+
+.box {
+  // width: 400px;
+  min-height: 350px;
+  justify-content: center;
+  padding: 70px 30px 70px 30px;
+  background-color: #fbfbfb;
+  border-radius: 12px 12px 12px 12px;
+}
